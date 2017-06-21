@@ -1,0 +1,122 @@
+<!-- Bootstrap notes: The md class has been used throughout for columns because it automatically stacks for smaller screens (100% view). Alternate option would be to resize for xs and sm. However, in this case it is not necessary. For m and l screens, ratio of 2:1 (content:side column) is used. See bootstrap documentation for details.-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About me</title>
+		<!--Bootstrap link -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  		<!-- jquery link for nav dropdown -->
+  		<script src="https://code.jquery.com/jquery-1.12.4.js"
+  		integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  		crossorigin="anonymous"></script>
+		<!-- javascript link for nav dropdown -->
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+	<!--Create header. Add bottom margin to allow space bettween content and sticky footer -->
+	<body style="margin-bottom: 60px">
+		<!-- Place in container so that heading and section have the same left margin -->
+		<div class="container">
+			<nav class="navbar navbar-default">
+	  			<div class="container-fluid">
+	    			<!-- Brand and toggle get grouped for better mobile display -->
+	    			<div class="navbar-header">
+		      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					    </button>
+					    <h1 class="text-muted">Aamir Laasi<h1>
+	    			</div>
+
+	    		<!-- Collect the nav links, forms, and other content for toggling -->
+		   			<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
+				    	<ul class="nav navbar-nav">
+				      	</ul>
+				     
+					    <ul class="nav navbar-nav navbar-right">
+				        <li><a href="index.html">About</a></li>
+				        <li><a href="portfolio.html">Portfolio</a></li>
+				        <li><a href="contact.html">Contact</a></li>
+					    </ul>
+			    
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		
+		<!-- Create container for main section contents -->
+		<div class="container">
+			<!-- The first column contains the title "About Me" and the main content. This is done so that the "connect with me" section is in column 2 and floats beneath column 1 when screen size is adjusted -->
+			<div class="col-md-8">
+				<!-- Use the first row for "About Me" title -->
+				<div class="row">
+					<!-- Use all columns for proper alignment -->
+					<div class="col-md-12">
+						<h1 class="page-header"> About Me</h1>
+					</div>
+				</div>
+				<!-- Use the second row for image and text-->
+				<div class="row">
+					<!-- Image takes up first 4 columns in row -->
+					<div class="col-md-4">
+						<img src="https://placehold.it/200x200" alt="Aamir Laasi">
+					</div>
+					<!-- Text takes up remaining 8 columns in row -->
+					<div class="col-md-8">
+						<p class="text-info">Welcome to my Portfolio website!</p>
+						<p class="text-info">My name is Aamir Laasi.</p> 
+						<p class="text-info">I am currently living in Houston. I was born in Pakistan, moved to Sri Lanka when I was nine years old, and then eventually settled in the U.S.A when I was fifteen. As you can tell, I am a proponent of the oxford comma. </p>
+						<p class="text-info">I attended the University of Texas at Austin and studied chemical engineering. After I graduated, I moved to the city of Houston.</p>
+					</div>
+				</div>
+				<!-- Another row for remainder of text -->
+				<div class="row">
+					<!-- Text takes up all the columns. Required for proper alignment -->
+					<div class="col-md-12">
+						<p class="text-info">I started working as a Process Engineer when I moved to Houston and I have been doing that for the past eleven years. </p>
+						<p class="text-info">I was one of the co-founders of a start-up called Sohmiume that I worked on part-time. Our goal was to develop a process for the mass manufacture of carbon nanotubes. Unfortunately, though we were able to develop a prototype we were not able to raise any outside funding for the venture. Remember, always have a clear value proposition!</p>
+						<p class="text-info">One of my hobbies is to read a lot of fantasy fiction. One of my favorite books is "The Name of the Wind". If you haven't read it then you should! However, be warned that this book is part of a trilogy and there still isn't a release date set for the last book.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Use remaining 4 columns for "Connect with Me" section -->
+			<div class="col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Connect with Me</h3>
+					</div>
+					<div class="panel-body text-center">
+						<a href="https://github.com/aamirlaasi" target="_blank"><img src="assets/images/git.png" alt="github"></a>
+
+						<a href="https://linkedin.com/in/aamirlaasi" target="blank"><img src="assets/images/linkedin.png" alt="linkedin"></a>
+		
+						<a href="https://stackoverflow.com/users/7928734/a-laasi?tab=profile" target="_blank"><img src="assets/images/stackoverflow.png" alt="stackoverflow"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="navbar-default navbar-fixed-bottom">
+			<div class="container-fluid">
+				<p class="text-muted text-center">© Copyright 2017 Aamir Laasi</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
